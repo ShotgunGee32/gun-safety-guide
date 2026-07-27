@@ -1,0 +1,174 @@
+{
+  "universal_rules": [
+    "Treat every firearm as if it's loaded, always.",
+    "Never point the muzzle at anything you're not willing to destroy.",
+    "Keep your finger off the trigger until your sights are on target and you've decided to fire.",
+    "Know your target and what's beyond it."
+  ],
+  "universal_storage": "Store unloaded, locked, with ammunition stored separately when not in use.",
+  "categories": [
+    {
+      "id": "semi-auto-handgun",
+      "title": "Semi-Automatic Handgun (9mm/.45 platforms)",
+      "safe_handling_checklist": [
+        "Remove magazine before any disassembly",
+        "Rack slide and visually + physically check chamber is empty",
+        "Point muzzle in a safe direction throughout"
+      ],
+      "disassembly_steps": [
+        "Remove magazine",
+        "Rack to clear chamber",
+        "Lock slide back",
+        "Rotate takedown lever",
+        "Ease slide forward off frame",
+        "Remove recoil spring and barrel"
+      ],
+      "cleaning_steps": [
+        "Bore snake or rod front-to-back through barrel",
+        "Solvent on bore brush, several passes",
+        "Wipe rails and frame",
+        "Light oil on rails and barrel exterior"
+      ],
+      "reassembly_and_function_check": [
+        "Reverse disassembly order",
+        "Function-check: trigger reset, safety engage",
+        "Reinsert magazine only after check complete"
+      ],
+      "storage_notes": "Locked case, unloaded, ammunition stored separately."
+    },
+    {
+      "id": "pump-shotgun",
+      "title": "Pump-Action Shotgun (12ga/20ga)",
+      "safe_handling_checklist": [
+        "Open action, visually + physically check chamber and magazine tube are empty"
+      ],
+      "disassembly_steps": [
+        "Remove magazine cap",
+        "Slide barrel off",
+        "Separate forend/pump assembly per manufacturer steps"
+      ],
+      "cleaning_steps": [
+        "Bore snake through barrel",
+        "Clean magazine tube",
+        "Wipe action bars",
+        "Light oil on moving parts, avoid over-oiling near chamber"
+      ],
+      "reassembly_and_function_check": [
+        "Reassemble in reverse order",
+        "Function check",
+        "Store unloaded and locked"
+      ],
+      "storage_notes": "Locked case, unloaded, ammunition stored separately."
+    },
+    {
+      "id": "bolt-action-rifle",
+      "title": "Bolt-Action Rifle (.22LR through common hunting calibers)",
+      "safe_handling_checklist": [
+        "Open bolt and lock rearward to visually confirm chamber is empty",
+        "Physically check chamber and feed with a finger sweep if uncertain",
+        "Remove detachable magazine (if equipped) before any cleaning steps",
+        "Point muzzle in a safe direction throughout"
+      ],
+      "disassembly_steps": [
+        "Remove bolt by pulling the bolt release/catch and sliding bolt out the rear",
+        "Remove magazine (detachable) or ensure internal magazine is empty",
+        "Most cleaning does not require removing barrel from stock — do so only if your specific model's manual calls for it"
+      ],
+      "cleaning_steps": [
+        "Run bore snake or patch-and-rod front-to-back through the barrel",
+        "Apply solvent to a bore brush, scrub several passes, follow with dry patches until they come out clean",
+        "Wipe down bolt body and lugs, apply a light film of oil to bolt lugs and rails",
+        "Wipe exterior metal surfaces with a lightly oiled cloth"
+      ],
+      "reassembly_and_function_check": [
+        "Reinsert bolt, cycle action several times to confirm smooth operation",
+        "Test trigger and safety engagement with chamber empty before storing",
+        "Reinsert magazine last, after function check is complete"
+      ],
+      "storage_notes": "Store unloaded, action open or bolt removed if possible, in a locked cabinet or safe. Ammunition stored separately."
+    },
+    {
+      "id": "revolver",
+      "title": "Revolver (.22 through common defensive/hunting calibers)",
+      "safe_handling_checklist": [
+        "Open cylinder and visually check every chamber is empty",
+        "Point muzzle in a safe direction while checking",
+        "Do not close cylinder until cleaning/inspection is complete"
+      ],
+      "disassembly_steps": [
+        "Most revolvers do not require full disassembly for routine cleaning — cylinder swings out for access",
+        "Do not attempt to remove the sideplate or internal lockwork — this is gunsmith-level work, not routine maintenance",
+        "For models with removable grips, grips may be taken off for a more thorough wipe-down"
+      ],
+      "cleaning_steps": [
+        "Clean each chamber individually with a bore brush and solvent, followed by dry patches",
+        "Clean the barrel front-to-back same as chamber cleaning",
+        "Clean the forcing cone (front of frame where barrel meets cylinder) — this area builds up carbon quickly",
+        "Wipe down the exterior of the cylinder face and frame",
+        "Apply a light film of oil to the crane/yoke pivot point and cylinder exterior"
+      ],
+      "reassembly_and_function_check": [
+        "Close cylinder gently, do not snap it shut",
+        "Test trigger pull and cylinder rotation with chamber empty",
+        "Confirm cylinder locks up tight with no excess play before storing"
+      ],
+      "storage_notes": "Store unloaded, cylinder closed but not loaded, in a locked container. Ammunition stored separately."
+    },
+    {
+      "id": "break-action-shotgun",
+      "title": "Break-Action Shotgun (Single or Double Barrel)",
+      "safe_handling_checklist": [
+        "Break the action open — this is the single most reliable visual safety check for this platform",
+        "Visually and physically confirm both chambers (or single chamber) are empty",
+        "Keep action open any time the gun is not actively being fired"
+      ],
+      "disassembly_steps": [
+        "Remove forend by releasing the forend latch",
+        "Separate barrel(s) from the receiver by opening the action fully and lifting the barrel away",
+        "This is typically the full extent of routine disassembly needed for cleaning"
+      ],
+      "cleaning_steps": [
+        "Run a bore snake or patch-and-rod through each barrel front-to-back",
+        "Clean the chamber end of each barrel and the breech face on the receiver where the barrels seat",
+        "Wipe extractors/ejectors and apply a light film of oil",
+        "Wipe down exterior metal and hinge pin with a lightly oiled cloth"
+      ],
+      "reassembly_and_function_check": [
+        "Reattach barrel(s) to receiver, then reattach forend",
+        "Cycle the action open and closed to confirm smooth operation",
+        "Test trigger(s) with action closed and chamber(s) empty before storing"
+      ],
+      "storage_notes": "Store unloaded with action open when possible, in a locked case. Ammunition stored separately."
+    },
+    {
+      "id": "semi-auto-rifle-ar-platform",
+      "title": "Semi-Automatic Rifle (AR-Platform and similar)",
+      "safe_handling_checklist": [
+        "Remove magazine first",
+        "Lock bolt/charging handle rearward and visually + physically check chamber is empty",
+        "Point muzzle in a safe direction throughout disassembly"
+      ],
+      "disassembly_steps": [
+        "Push out takedown and pivot pins to separate upper and lower receiver",
+        "Remove charging handle and bolt carrier group (BCG) from the upper receiver",
+        "Disassemble BCG: remove firing pin retaining pin, firing pin, cam pin, then rotate and lift out the bolt",
+        "Do not remove the gas rings or attempt trigger group disassembly — this goes beyond routine cleaning"
+      ],
+      "cleaning_steps": [
+        "Clean the bore front-to-back (or chamber-to-muzzle using a bore guide) with solvent and brush, then dry patches",
+        "Clean carbon buildup from the bolt tail, bolt lugs, and inside the carrier key using a nylon brush",
+        "Clean the chamber with a chamber brush",
+        "Wipe down the inside of the upper receiver and buffer tube area",
+        "Apply oil to bolt lugs, cam pin, and rails — this platform generally runs best wet, not dry"
+      ],
+      "reassembly_and_function_check": [
+        "Reassemble BCG in reverse order, confirm cam pin and firing pin retaining pin are fully seated",
+        "Reinsert BCG and charging handle into upper receiver",
+        "Rejoin upper and lower receivers, replace takedown/pivot pins",
+        "Charge the action and test trigger reset with chamber empty before storing",
+        "Reinsert magazine only after function check is complete"
+      ],
+      "storage_notes": "Store unloaded, magazine removed, bolt closed or open per your safe's configuration, in a locked safe or cabinet. Ammunition stored separately."
+    }
+  ]
+}

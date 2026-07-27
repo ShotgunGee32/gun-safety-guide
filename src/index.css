@@ -1,0 +1,215 @@
+:root {
+  --navy: #0a2540;
+  --navy-deep: #071a30;
+  --grid-line: #173e63;
+  --ink: #e8f4ff;
+  --ink-dim: #7fa8cc;
+  --amber: #ffb703;
+  --green: #5fd4a0;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-color: var(--navy);
+}
+
+.header {
+  padding: 32px 24px 20px;
+  border-bottom: 1px solid var(--grid-line);
+  background: var(--navy-deep);
+}
+
+.header h1 {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.header p {
+  font-family: var(--mono);
+  color: var(--ink-dim);
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+/* Always-visible universal safety rules banner */
+.rules-banner {
+  margin: 0;
+  padding: 16px 24px;
+  background: rgba(255, 183, 3, 0.08);
+  border-bottom: 2px solid var(--amber);
+}
+
+.rules-banner-title {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.rules-banner ol {
+  margin: 0;
+  padding: 0 0 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px 24px;
+}
+
+.rules-banner li {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.rules-banner .storage-note {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 183, 3, 0.3);
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+.card {
+  border: 1px solid var(--grid-line);
+  border-radius: 4px;
+  background: rgba(10, 37, 64, 0.6);
+  padding: 18px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--amber);
+  transform: translateY(-2px);
+}
+
+.card-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  margin: 8px 0 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.detail {
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-dim);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0 20px;
+}
+
+.back-btn:hover { color: var(--amber); }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 800px) {
+  .detail-grid { grid-template-columns: 1fr; }
+}
+
+.diagram-wrap {
+  border: 1px solid var(--grid-line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  margin: 24px 0 10px;
+}
+
+.section-title:first-of-type { margin-top: 0; }
+
+.step-list {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0;
+  counter-reset: step;
+}
+
+.step-list li {
+  counter-increment: step;
+  position: relative;
+  padding: 10px 0 10px 36px;
+  border-bottom: 1px solid var(--grid-line);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.step-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--amber);
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storage-box {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-left: 2px solid var(--green);
+  background: rgba(95, 212, 160, 0.06);
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+
+.storage-box strong { color: var(--green); }
